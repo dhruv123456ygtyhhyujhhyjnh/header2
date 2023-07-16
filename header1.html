@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        height: 80px;
+        background-color: rgba(27, 176, 245, 0.733);
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+        align-items: center;
+    }
+    .left{
+        display: flex;
+        list-style: none;
+        gap: 40px;
+
+    }
+    .center{
+        font-size: 30px;
+        /* font-weight: 700; */
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
+    }
+    .right{
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        padding-left: 800px;
+    }
+    p{
+        cursor: pointer;
+    }
+    .home{
+        position: relative;
+    }
+    .content{
+        position: absolute;
+        list-style: none;
+        top: 50px;
+        height: fit-content;
+        width: 100px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding:10px ;
+        border-top: 3px solid blue;
+        border-radius: 10px;
+        display: none;
+    }
+    .content p{
+        padding: 8px 0;
+    }
+    .content p:hover{
+        color: chocolate;
+    }
+    .services{
+        position: relative;
+    }
+    .content2{
+        position: absolute;
+        list-style: none;
+        top: 70px;
+        height: fit-content;
+        width: 100px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding:10px ;
+        border-top: 3px solid blue;
+        border-radius: 10px;
+        display: none;
+        left: 150px;
+    }
+    .content2 p{
+        padding: 8px 0;
+    }
+    .content2 p:hover{
+        color: chocolate;
+    }
+    .contact{
+        position: relative;
+    }
+    .content3{
+        position:absolute;
+        list-style: none;
+        top: 70px;
+        height: fit-content;
+        width: 100px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding:10px ;
+        border-top: 3px solid blue;
+        border-radius: 10px;
+        display: none;
+        left: 240px;
+    }
+    .content3 p{
+        padding: 8px 0;
+    }
+    .content3 p:hover{
+        color: chocolate;
+    }
+    .About{
+        position: relative;
+    }
+    .content4{
+        position: absolute;
+        list-style: none;
+        top: 70px;
+        height: fit-content;
+        width: 100px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding:10px ;
+        border-top: 3px solid blue;
+        border-radius: 10px;
+        display: none;
+        
+    }
+    .content4 p{
+        padding: 8px 0;
+    }
+    .content4 p:hover{
+        color: chocolate;
+    }
+    .Gallery{
+        position: relative;
+    }
+    .content5{
+        position: absolute;
+        list-style: none;
+        top: 70px;
+        height: fit-content;
+        width: 100px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding:10px ;
+        border-top: 3px solid blue;
+        border-radius: 10px;
+        display: none;
+        right: 20px;
+    }
+    .content5 p{
+        padding: 8px 0;
+    }
+    .content5 p:hover{
+        color: chocolate;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="home" onclick="show1()">
+            <p>Home</p>
+            <ul class="content">
+                <p>home1</p>
+                <p>home2</p>
+                <p>home3</p>
+                <p>home4</p>
+            </ul>
+        </div>
+        <div class="Services" onclick="show2()">
+            <p>Services</p>
+        </div>
+        <ul class="content2">
+            <p>Services1</p>
+            <p>Services2</p>
+            <p>Services3</p>
+            <p>Services4</p>
+        </ul>
+        <div class="contact" onclick="show3()">
+            <p>contact</p>
+        </div>
+        <ul class="content3">
+            <p>contact1</p>
+            <p>contact2</p>
+            <p>contact3</p>
+            <p>contact4</p>
+        </ul>
+            
+            <div class="center">
+                <i class="fa-brands fa-wordpress"></i>
+            </div>
+            <div class="right">
+                <div class="Abou" onclick="show4()">
+                    <p>About us</p>
+                </div>
+                <ul class="content4">
+                    <p>About us1</p>
+                    <p>About us2</p>
+                    <p>About Us3</p>
+                    <p>About us4</p>
+                </ul>
+                <div class="Gallery" onclick="show5()">
+                    <p>Gallery</p>
+                </div>
+                <ul class="content5">
+                    <p>Gallery1</p>
+                    <p>Gallery2</p>
+                    <p>Gallery3</p>
+                    <p>Gallery4</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+   function show1(){
+
+if( document.querySelector(".content").style.display !== "block"){
+    document.querySelector(".content").style.display="block"
+}else{
+
+    document.querySelector(".content").style.display="none"
+
+}
+
+}
+function show2(){
+
+if( document.querySelector(".content2").style.display !== "block"){
+    document.querySelector(".content2").style.display="block"
+}else{
+
+    document.querySelector(".content2").style.display="none"
+
+}
+
+}
+function show3(){
+
+if( document.querySelector(".content3").style.display !== "block"){
+    document.querySelector(".content3").style.display="block"
+}else{
+
+    document.querySelector(".content3").style.display="none"
+
+}
+
+}
+function show4(){
+
+if( document.querySelector(".content4").style.display !== "block"){
+    document.querySelector(".content4").style.display="block"
+}else{
+
+    document.querySelector(".content4").style.display="none"
+
+}
+
+}
+function show5(){
+
+if( document.querySelector(".content5").style.display !== "block"){
+    document.querySelector(".content5").style.display="block"
+}else{
+
+    document.querySelector(".content5").style.display="none"
+
+}
+
+}
+</script>
+</html>
